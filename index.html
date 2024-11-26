@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio de Luna Heuguerot">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio - Luna Heuguerot</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <a href="#">Luna</a>                
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="select()">INICIO</a></li>
+                    <li><a href="#about" onclick="select()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="select()">HABILIDADES</a></li>
+                    <li><a href="#resume" onclick="select()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="responsive-nav" onclick="showHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div class="banner">
+            <div class="img-container">
+                <img src="img/ejemplo.png" alt="">
+            </div>
+            <h1>LUNA HEUGUEROT</h1>
+            <h2>Desarrolladora Full Stack</h2>
+            <div class="social-media">
+                <a href="https://www.instagram.com/lunaheuguerot" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/luna-heuguerot/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/LunaHeuguerot" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+     <section id="about" class="about">
+        <div class="about-me">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Luna Heuguerot.</span> Una apasionada profesional de la tecnología en constante búsqueda de desafíos emocionantes en el mundo de la programación y el desarrollo web.</p>
+
+            <div class="row">
+                <!-- PERSONAL DATA -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            2 Mayo 1997
+                        </li>
+                        <li>
+                            <strong>Residencia</strong>
+                            Resistencia, Chaco - Argentina
+                        </li>
+                        <li>
+                            <strong>Mail</strong>
+                            lunaheuguerot@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- INTERESTS -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="interests-container">
+                        <div class="interests">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FÚTBOL</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELÍCULAS</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOGRAFÍA</span>
+                        </div>
+                        <div class="interests">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LECTURA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="download()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React JS</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node JS</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Paquete Office</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>                       
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="skill-bar">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="skill-bar">
+                                <div class="progress">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="skill-bar">
+                                <div class="progress">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="skill-bar">
+                                <div class="progress">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Liderazgo</span>
+                            <div class="skill-bar">
+                                <div class="progress">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Organización</span>
+                            <div class="skill-bar">
+                                <div class="progress">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="resume">
+        <div class="resume-content">
+            <h2>Curriculum</h2>
+            <div class="row">
+                <div class="col left">
+                    <h3>Educación</h3>
+                    <div class="item left-i">
+                        <h4>Bachillerato en Ciencias Sociales</h4>
+                        <span class="place">Instituto P. Miguel Di Gerónimo</span>
+                        <span class="date">2014</span>
+                        <p></p>
+                        <div class="connector-i">
+                            <div class="circle-i"></div>
+                        </div>
+                    </div>
+                    <div class="item left-i">
+                        <h4>Desarrollo Full Stack</h4>
+                        <span class="place">CoderHouse</span>
+                        <span class="date">2023 - 2024</span>
+                        <p></p>
+                        <div class="connector-i">
+                            <div class="circle-i"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- EXPERIENCIA LABORAL -->
+                <!-- <div class="col right">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item right-i">
+                        <h4>Bachillerato en Ciencias Sociales</h4>
+                        <span class="place">Instituto P. Miguel Di Gerónimo</span>
+                        <span class="date">2014</span>
+                        <p></p>
+                        <div class="conector-d">
+                            <div class="circle-d"></div>
+                        </div>
+                    </div>
+                    <div class="item right-i">
+                        <h4>Desarrollo Full Stack</h4>
+                        <span class="place">CoderHouse</span>
+                        <span class="date">2023 - 2024</span>
+                        <p></p>
+                        <div class="connector-d">
+                            <div class="circle-d"></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-content">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="img/qr-code-component.jpg" alt="QR Code Component">
+                    <div class="overlay">
+                        <h3>QR Code Component</h3>
+                        <p>Un componente de QR Code responsive. <a href="https://github.com/LunaHeuguerot/qr-code-component" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/pfbackend.jpg" alt="PF Backend">
+                    <div class="overlay">
+                        <h3>PF Backend</h3>
+                        <p>Backend para un proyecto final. <a href="https://github.com/LunaHeuguerot/PFBackend" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/js-game.jpg" alt="JavaScript Game">
+                    <div class="overlay">
+                        <h3>JavaScript Game</h3>
+                        <p>Un juego interactivo desarrollado en JavaScript. <a href="https://github.com/LunaHeuguerot/js-game" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/my-gallery.jpg" alt="My Gallery">
+                    <div class="overlay">
+                        <h3>My Gallery</h3>
+                        <p>Una galería de imágenes personal. <a href="https://github.com/LunaHeuguerot/my-gallery" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/chat.jpg" alt="Chat App">
+                    <div class="overlay">
+                        <h3>Chat App</h3>
+                        <p>Aplicación de chat en tiempo real. <a href="https://github.com/LunaHeuguerot/chat" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/oslo-labdeviajes.jpg" alt="Oslo Lab De Viajes">
+                    <div class="overlay">
+                        <h3>Oslo Lab De Viajes</h3>
+                        <p>Un proyecto sobre viajes a Oslo. <a href="https://github.com/LunaHeuguerot/Oslo-LabDeViajes" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/simulador-final.jpg" alt="Simulador Final">
+                    <div class="overlay">
+                        <h3>Simulador Final</h3>
+                        <p>Simulador para un proyecto final. <a href="https://github.com/LunaHeuguerot/simulador-final" target="_blank">Ver en GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT ME -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>CONTACTO</h2>
+            <div class="row">
+                <!-- FORM -->
+                <form action="/send" method="POST">
+                    <div class="col">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="number" name="telefono" placeholder="Teléfono" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="tema" placeholder="Tema" required>
+                        <textarea name="detalle" id="" cols="30" rows="10" placeholder="Detalle de consulta" required></textarea>
+                        <button type="submit">
+                            Enviar<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </form>
+                <!-- INFO -->
+                <div class="col">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-at"></i>
+                                Email: lunaheuguerot@gmail.com
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: +54 (011) 36229426
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="up">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="social-media">
+            <a href="https://www.instagram.com/lunaheuguerot"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/luna-heuguerot/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/LunaHeuguerot"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href="#"><i class="fa-solid fa-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <!-- GOOGLE TRANSLATE WIDGET -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'en,es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
